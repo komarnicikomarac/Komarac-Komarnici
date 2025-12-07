@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komarac - Profesionalna montaža komarnika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'emerald-900': '#0B3D2E',
+                        'emerald-950': '#082F23',
+                        'emerald-50': '#F0FDF8',
+                        'emerald-100': '#E6F7EE',
+                        'emerald-200': '#D1F0E2',
+                        'emerald-300': '#A8E6C6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .star-icon {
+            color: #facc15;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="bg-emerald-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                <i class="fas fa-shield-check text-emerald-300 text-xl"></i>
+                <h1 class="text-2xl md:text-3xl font-bold">Komarac</h1>
+            </div>
+            <nav class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-sm md:text-base">
+                <a href="#about" class="hover:text-emerald-300 transition-colors">O Nama</a>
+                <a href="#services" class="hover:text-emerald-300 transition-colors">Usluge</a>
+                <a href="#reviews" class="hover:text-emerald-300 transition-colors">Recenzije</a>
+                <a href="#contact" class="hover:text-emerald-300 transition-colors">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-emerald-900 text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center mb-6">
+                <i class="fas fa-home text-emerald-300 text-4xl"></i>
+            </div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Zaštitite svoj dom od insekata</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Profesionalna montaža komarnika na prozore i vrata – već godinama garantujemo kvalitet i zadovoljstvo
+            </p>
+            <a href="#contact" class="bg-white text-emerald-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-100 transition-colors inline-block">
+                Zakažite besplatnu konsultaciju
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-900">O Nama</h2>
+            <div class="max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
+                <p class="text-lg mb-6">
+                    Firma <strong>Komarac</strong> uspešno posluje već nekoliko godina, pružajući kvalitetne usluge postavljanja komarnika na prozore, balkonska i ulazna vrata širom regiona.
+                </p>
+                <p class="text-lg mb-6">
+                    Naš tim iskusnih stručnjaka koristi isključivo najkvalitetnije materijale i savremene tehnike montaže, prilagođene potrebama svakog domaćinstva ili poslovnog prostora.
+                </p>
+                <p class="text-lg">
+                    Brzina, preciznost i zadovoljstvo klijenata su naši najvažniji prioriteti!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-900">Naše Usluge</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-emerald-900 mb-4">
+                        <i class="fas fa-window-maximize text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-900">Komarnici za prozore</h3>
+                    <p class="text-gray-600">Montaža na sve vrste prozora: PVC, drvene i aluminijumske</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-emerald-900 mb-4">
+                        <i class="fas fa-door-open text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-900">Balkonska vrata</h3>
+                    <p class="text-gray-600">Klizni i zakačni sistemi za balkonska vrata</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-emerald-900 mb-4">
+                        <i class="fas fa-door-closed text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-900">Ulazna vrata</h3>
+                    <p class="text-gray-600">Specijalna rešenja za ulazna vrata vašeg doma</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-emerald-900 mb-4">
+                        <i class="fas fa-bolt text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-900">Brza montaža</h3>
+                    <p class="text-gray-600">Profesionalna instalacija u roku od 24-48 sati</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-emerald-900 mb-4">
+                        <i class="fas fa-shield-alt text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-900">Kvalitetni materijali</h3>
+                    <p class="text-gray-600">Najbolji materijali na tržištu sa garancijom</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-emerald-900 mb-4">
+                        <i class="fas fa-tools text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-900">Servis i održavanje</h3>
+                    <p class="text-gray-600">Zamena mrežica i kompletna servisna podrška</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-900">Recenzije Naših Klijenata</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Profesionalci od A do Ž! Komarnici su postavljeni savršeno, bez ikakvih mrlja ili oštećenja. Preporučujem svima!"</p>
+                    <div class="font-semibold text-emerald-900">Ana Petrović</div>
+                    <div class="text-sm text-gray-600">Beograd</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Već tri godine koristim usluge firme Komarac. Uvek tačni, uredni i korektni. Najbolji u poslu!"</p>
+                    <div class="font-semibold text-emerald-900">Marko Jovanović</div>
+                    <div class="text-sm text-gray-600">Novi Sad</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Najbolja investicija ovog leta! Komarnici su lepi, funkcionalni i potpuno neprimetni kada nisu u upotrebi."</p>
+                    <div class="font-semibold text-emerald-900">Milica Stanković</div>
+                    <div class="text-sm text-gray-600">Niš</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Brzo, efikasno i po razumnoj ceni. Nikad više mučenje sa komaricama uveče!"</p>
+                    <div class="font-semibold text-emerald-900">Petar Kovačević</div>
+                    <div class="text-sm text-gray-600">Kragujevac</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Zamislite – spavate s otvorenim prozorima, a bez jednog insekta! Hvala Komarac timu!"</p>
+                    <div class="font-semibold text-emerald-900">Jelena Bogdanović</div>
+                    <div class="text-sm text-gray-600">Subotica</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Montirali su nam komarnike na celu kuću za samo jedan dan. Savršen detalj i savršena usluga."</p>
+                    <div class="font-semibold text-emerald-900">Goran i Sanja Milenković</div>
+                    <div class="text-sm text-gray-600">Zrenjanin</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Posebno sam zadovoljna pažnjom koju su posvetili našim starijim prozorima. Sve urađeno nježno i precizno."</p>
+                    <div class="font-semibold text-emerald-900">Ljiljana Ristić</div>
+                    <div class="text-sm text-gray-600">Čačak</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Odličan odnos cene i kvaliteta. Komarnici su robusni, lako se koriste i veoma lepo izgledaju."</p>
+                    <div class="font-semibold text-emerald-900">Đorđe Nikolić</div>
+                    <div class="text-sm text-gray-600">Pančevo</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Brza intervencija i savet stručnjaka. Sve objašnjeno detaljno i bez pritiska. Preporučujem!"</p>
+                    <div class="font-semibold text-emerald-900">Marija Ilić</div>
+                    <div class="text-sm text-gray-600">Kraljevo</div>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+                    <div class="flex mb-3">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Konačno miran san i svež vazduh u kući! Firma Komarac je rešila naš problem za manje od dva sata."</p>
+                    <div class="font-semibold text-emerald-900">Vladimir Simić</div>
+                    <div class="text-sm text-gray-600">Šabac</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-emerald-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Kontaktirajte Nas</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-phone text-emerald-300 text-xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Telefon</h3>
+                    <p class="text-emerald-200">+381 66 66 66 306</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-envelope text-emerald-300 text-xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-emerald-200">komarnicikomarac@gmail.com</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-emerald-300 text-xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Radno Vreme</h3>
+                    <p class="text-emerald-200">Pon-Pet: 8-18h<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-emerald-200 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg font-semibold mb-2">Komarac</p>
+            <p>© 2021 Sva prava zadržana. Profesionalna montaža komarnika od poverenja.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
